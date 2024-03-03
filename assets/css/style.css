@@ -766,6 +766,9 @@ a{
     border-radius: 20px;
     background: #FFF;
 }
+.pricing-item--active{
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+}
 .pricing-item__type{
     color: #FF5B2E;
     font-size: 1.2rem;
@@ -817,4 +820,303 @@ a{
 .pricing-item__item::before{
     content: url(../icon/Check-02.svg);
     margin-right: 14px;
+}
+/* review */
+.review{
+    padding: 105px 0 52px;
+}
+.review__inner{
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+.review__control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    border: 1.5px solid #ffd1c4;
+    color: #FF5B2E;
+}
+.review__control:nth-of-type(2){
+    margin-left: auto;
+}
+.review__control:hover{
+    background-color: #FF5B2E;
+    color: #FFF;
+    border-color: #FF5B2E;
+    cursor: pointer;
+}
+.review__list{
+    display: flex;
+}
+.review-item{
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+}
+.review-item__media{
+    position: relative;
+    margin-top: -52px;
+    flex-shrink: 0;
+    width: 274px;
+    border-radius: 137px;
+}
+.review-item__media::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 82%;
+    background-color: #FFDA54;
+    border-radius: 137px;
+}
+.review__content{
+    overflow: hidden;
+}
+.review__img{
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: inherit;
+}
+.review-item__content{
+    margin-top: 28px;
+}
+.review-item__quote{
+    width: 550px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.55;
+}
+.review-item__author{
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    color: #282828;
+    font-family: var(--primary-fontfamily);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; 
+}
+.review-item__author::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #000;
+    margin-right: 8px;
+}
+.review__dots{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin-top: 56px;
+}
+.review__dot{
+    width: 8px;
+    height: 8px;
+    border: 1px solid #FF5B2E;
+    border-radius: 50%;
+}
+.review__dot:hover{
+    background-color: #FF5B2E;
+    cursor: pointer;
+}
+.review__dot--active{
+    width: 24px;
+    border-radius: 4px;
+    background: #FF5B2E;
+}
+.blog{
+    padding: 78px 0 130px;
+}
+.blog__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog__info{
+    margin-right: 74px;
+    width: 350px;
+}
+.blog__desc {
+    margin-top: 0;
+}
+.blog__cta{
+    margin-top: 24px;
+    min-width: 182px;
+    border: 1px solid #ff9b7e;
+    color: #FF5B2E;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.blog__list{
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 48px;
+}
+.blog-item__img-wrap{
+    background-color: #90CCFF;
+    border-radius: 24px;
+    padding: 24px 0 0 36px ;
+}
+.blog-item__time{
+    color: #FFF;
+    font-family: var(--primary-fontfamily);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21;
+}
+.blog-item__img{
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    height: 296px;
+    object-fit: cover;
+}
+.blog-item:nth-child(2) .blog-item__img-wrap{
+    background-color: #FF997E;
+}
+.blog-item:nth-child(3) .blog-item__img-wrap{
+    background-color: #5BD6E2;
+}
+
+.blog-item__info{
+    padding: 28px 0 0 0;
+}
+.blog-item__title{
+    color: #000958;
+    font-family: var(--primary-fontfamily);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.54; 
+}
+.blog-item__desc{
+    margin-top: 16px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
+}
+.footer{
+    margin-bottom: 1000px;
+    background: linear-gradient(to right,#FFF6ED 41%,#FFFAF5 41%);
+}
+.footer__inner{
+    display: flex;
+    align-items: center;
+}
+.subscribe-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 268px;
+    height: 46px;
+    margin: 34px 0 68px;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    background: #FFF;
+}
+.subscribe-form__input{
+    padding: 16px 22px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    font-size: 1.4rem;
+}
+.subscribe-form__input::placeholder{
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16;
+}
+
+.subscribe-form__submit{
+    margin-right: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ff5b2e;
+    box-shadow: 0px 15px 28px -7px rgba(255, 91, 46, 0.3);
+    border: none;
+    outline: none;
+}
+.subscribe-form__submit:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.footer__heading{
+    color: #000958;
+    font-family: var(--primary-fontfamily);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.social-list{
+    margin-top: 16px;
+    display: flex;
+    column-gap: 16px;
+}
+.social-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+.social-item:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer__left{
+    width: 42%;
+}
+.footer__right{
+    flex-grow: 1;
+    padding: 52px 0 52px 129px;
+}
+.footer__row{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 58px 137px;
+}
+.footer__list{
+    margin-top: 14px;
+}
+.footer__link{
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2; 
+}
+.footer__link:hover{
+    text-decoration: underline;
+}
+.footer__copyright{
+    text-align: center;
+    padding-bottom: 48px;
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.16;
 }
